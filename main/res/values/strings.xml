@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MAD_Assignment1</string>
+    <string name="title_home">Home</string>
+    <string name="title_task">Task</string>
+    <string name="title_student">Student</string>
+    <string name="title_gallery">Photo Gallery</string>
+    <string name="context_choice">Please select...</string>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="status">
+        <item>Not Complete</item>
+        <item>Complete</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+</resources>

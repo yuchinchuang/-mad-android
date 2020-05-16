@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExamActivity"
+    android:orientation="vertical"
+    android:background="@drawable/blackboard">
+
+    <LinearLayout
+        android:id="@+id/subNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_white"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvExamTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exam List"
+            android:textColor="@color/colorText"
+            android:textSize="30sp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/imgDeleteExam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="3"
+            android:src="@drawable/ic_trash_white"/>
+
+        <ImageView
+            android:id="@+id/imgAddExam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_plus"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/lvExams"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" />
+
+    <TableLayout
+        android:id="@+id/tblExamDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <TextView
+                android:text="Unit Name"
+                android:textSize="20sp"
+                android:textColor="@color/colorText"/>
+            <EditText
+                android:id="@+id/etUnitName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Date"
+                android:textSize="20sp"
+                android:textColor="@color/colorText"/>
+            <EditText
+                android:id="@+id/etEDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/btnSelectDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorButtonSelect"
+                android:text="Select date"
+                android:layout_span="2"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Time"
+                android:textSize="20sp"
+                android:textColor="@color/colorText"/>
+            <EditText
+                android:id="@+id/etETime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/btnSelectTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorButtonSelect"
+                android:text="Select time"
+                android:layout_span="2"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Location"
+                android:textSize="20sp"
+                android:textColor="@color/colorText"/>
+            <EditText
+                android:id="@+id/etELocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/btnBacktoExamList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Back to list"
+
+                android:textSize="22sp"/>
+            <Button
+                android:id="@+id/btnAddNewExam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save exam"
+                android:textSize="22sp"
+                android:padding="5dp"
+                android:background="@color/colorAccent"/>
+        </TableRow>
+    </TableLayout>
+
+
+
+</LinearLayout>

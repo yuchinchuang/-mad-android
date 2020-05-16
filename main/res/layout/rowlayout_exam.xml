@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:background="@color/colorHeading">
+
+        <CheckBox
+            android:id="@+id/ckbSelectExam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5" />
+
+        <TextView
+            android:id="@+id/tvUnitName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="30sp"
+            android:text="Unit Name"/>
+
+        <ImageView
+            android:id="@+id/imgFlag"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="5"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvEDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="75dp"
+        android:textSize="25sp"
+        android:text="Date"
+        android:textColor="@color/colorText"/>
+
+    <TextView
+        android:id="@+id/tvETime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="75dp"
+        android:textSize="25sp"
+        android:text="Time"
+        android:textColor="@color/colorText"/>
+
+    <TextView
+        android:id="@+id/tvELocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="75dp"
+        android:textSize="25sp"
+        android:text="Location"
+        android:textColor="@color/colorText"/>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
+
+    <TextView
+        android:id="@+id/tvTName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:layout_weight="3"/>
+
+    <TextView
+        android:id="@+id/tvTLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textSize="20sp"
+        android:textColor="@color/colorText"
+        android:layout_weight="3"/>
+
+    <ImageView
+        android:id="@+id/imgEditTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_edit_white"
+        android:layout_weight="5"/>
+
+</LinearLayout>

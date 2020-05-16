@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaskDetailActivity"
+    android:orientation="vertical"
+    android:background="@drawable/blackboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvTitle_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="To-Do-Task Details"
+            android:layout_weight="1"
+            android:textColor="@color/colorText"/>
+
+    </LinearLayout>
+
+
+    <TableLayout
+        android:id="@+id/tblTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:stretchColumns="0,1">
+
+        <TableRow>
+            <TextView
+                android:text="Task Name"
+                android:textSize="20sp"
+                android:textColor="@color/colorText"/>
+            <EditText
+                android:id="@+id/etTName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Location"
+                android:textSize="20sp"
+                android:textColor="@color/colorText"/>
+            <EditText
+                android:id="@+id/etTLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tblRow_taskStatus">
+            <TextView
+                android:text="Status"
+                android:textSize="20sp"
+                android:textColor="@color/colorText"/>
+            <Spinner
+                android:id="@+id/spStatus"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:prompt="@string/context_choice"
+                android:entries="@array/status"/>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/btnBackToList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:text="Cancel"
+                android:textSize="22sp"/>
+            <FrameLayout>
+                <Button
+                    android:id="@+id/btnAddNewTask"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Add Task"
+                    android:textSize="22sp"
+                    android:padding="5dp"
+                    android:background="@color/colorAccent"/>
+
+                <Button
+                    android:id="@+id/btnUpdateTask"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Save Changes"
+                    android:textSize="22sp"
+                    android:padding="5dp"
+                    android:background="@color/colorAccent"/>
+            </FrameLayout>
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
